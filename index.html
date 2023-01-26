@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tag -->
+        <meta charset="utf-8">
+        
+        <!-- Title -->
+        <title> Color Palettes </title>
+        
+        <!-- Link CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- D3.js Source --> 
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        
+    </head>
+    <body style="margin: 20px; text-align:center;">
+        
+        
+        <!-- Title -->
+        
+        <h1 style = "text-align:center; color:slategray;"><bold> Your Favorite Post-Impressionist Artists and the Color Palettes They Use </bold></h1>
+        
+        
+        <!-- Insights --> 
+        
+        <p style="text-align: center"> 
+            Post-Impressionism was a 19th century art movement that rejected the naturalism of Impressionism. Post-Impressionist painters tended to favor 
+            a more expressive use of color and form when compared to artists of other genres. We discovered that Post-Impressionism was primarily made up of 
+            French, male artists from the years 1886 and 1905. Still, we found and included paintings created after 1905, female artists, and artists from
+            various ethnic and national backgrounds. <br><br> This visualization aims to facilitate the comparing and contrasting 
+            of color palettes among Post-Impressionist artists.
+        </p>
+        
+        
+        <!-- Tooltip Div -->
+        
+        <div id="tooltip" class="hidden"> <!-- hidden initially -->
+            
+            <!-- Color palette rectangle svg -->
+            <svg width="200" height="50" class="center" id="pal"></svg>
+            
+            <!-- Painting image svg -->
+            <svg width="200px" height="200px" class="center" id="image"></svg>
+            
+            <!-- Painting title paragraph -->
+            <p style="text-align: center" width=200px> "<span id="name"> Painting Name </span>" </p>
+            
+        </div> 
+        
+        <!-- Painter Name Tooltip Div --> 
+        
+        <div id="pTooltip" class="hidden"> <!-- hidden initially -->
+            
+            <!-- Painting title paragraph -->
+            <p style="text-align: center" width=200px> <span id="pName"> Painter Name </span> </p>
+            
+        </div> 
+        
+        
+        <!-- Link D3 Code -->
+        
+        <main>
+            <div id="svg-container"></div>
+            <div id="compare-container">
+                <div id="compare-1" class="compare"></div>
+                <div id="compare-2" class="compare"></div>
+            </div>
+        </main>
+
+
+        <!-- <script src="prototype.js"></script>  -->
+        <script src="./prototype-v5.js"></script>
+        
+        
+        <!-- Submission Info --> 
+        
+        <div id="submission">
+        
+            <h4 style="text-align: center"> <br> Created by </h4> 
+            
+            <p style="text-align: center"> Mona Zhao (yzhao172@ucsc.edu) <br> Leon Stoeber (lstoeber@ucsc.edu) <br> Matthew Chen (mchen146@ucsc.edu) <br> Diana Flores (dgflores@ucsc.edu) <br> Maria Penno (mpenno@ucsc.edu) <br>  in collaboration with Suresh K Lodha, Jacob Low, and Omkar Ghanekar </p>
+            
+            <p style="text-align: center"> <a href="https://github.com/leonstoeber/CSE-163-Fall-2022-Final-Project"> Github Link </a> <br> <br> </p>
+        
+            <h4 style="text-align: center"> Designed for </h4>
+            
+            <p style="text-align: center"> CSE 163: Data Programming for Visualization, Fall 2022 </p> <br>
+        
+    
+        <!-- Four source columns -->
+            
+            <div class="row">
+                <div class="column">
+                    <b>Files Submitted</b> <br>
+                    <p>index.html<br>style.css<br>prototype-v5.js<br>raw-data.csv<br>painters/<br>paintings/<br><br></p>
+                </div>
+                <div class="column">
+                    <b>Data Sources</b> <br>
+                    <p>
+                        <a href="https://www.wikiart.org/"> WikiArt Visual Art Encyclopedia </a> <br>
+                        <a href="https://imagecolorpicker.com/en">IMAGECOLORPICKER</a>
+                    </p>
+                </div>
+                <div class="column">
+                    <b>Visualization sources</b> <br>
+                    <p>
+                        <a href="https://observablehq.com/@d3/clustered-bubbles?collection=@d3/d3-force">Clustered Bubbles</a> <br>
+                        <a href="https://bl.ocks.org/ctufts/f38ef0187f98c537d791d24fda4a6ef9">Clustered Force Layout Bubble Chart</a>
+                    </p>
+                </div>
+                <div class="column">
+                    <b>Code Sources</b> <br>
+                    <p>
+                        <a href="https://observablehq.com/@d3/clustered-bubbles?collection=@d3/d3-force"> Clustered Bubbles </a> <br>
+                        <a href="https://bl.ocks.org/ctufts/f38ef0187f98c537d791d24fda4a6ef9"> Clustered Force Layout Bubble Chart </a> <br>
+                        <a href="https://sureshlodha.github.io/CMPS263_Winter2018/CMPS263FinalProjects/ChineseHistory/index.html"> The Rise and Fall of Chinese History: 221 BC to 2018 AC </a> <br> 
+                        <a href="https://d3-wiki.readthedocs.io/zh_CN/master/Force-Layout/"> D3 Wiki Force Layout </a> <br> 
+                        <a href="https://github.com/d3/d3-force"> d3-force </a> <br> 
+                        <a href="https://github.com/d3/d3-quadtree"> d3-quadtree </a>
+                        <a href="https://observablehq.com/@mohit21go/force-directed-graph"> Force-Directed Graph with Image in circle as Node Label </a> 
+                        <a href="https://www.geeksforgeeks.org/program-change-rgb-color-model-hsv-color-model/">RGB to HSV</a>
+                    </p> 
+                </div>
+            </div>   
+        </div>
+        
+    </body>
+</html>
